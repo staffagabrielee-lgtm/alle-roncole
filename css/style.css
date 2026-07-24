@@ -356,7 +356,13 @@ p{ margin:0 0 1em; }
   .split-media img.img-main{ height:auto; aspect-ratio: 3 / 2; object-position: center; }
 
   .photo-mosaic{ grid-template-columns: repeat(2, 1fr); }
-  .photo-mosaic .mosaic-1{ grid-column: span 2; grid-row: span 1; height:260px; }
+  .photo-mosaic .mosaic-1{ grid-column: span 2; grid-row: span 2; }
+
+  .certifications-row{
+    display:grid; grid-template-columns: repeat(3, 1fr); align-items:center;
+    gap: 24px 16px;
+  }
+  .certifications-row img{ width:100%; height:auto; max-height:50px; margin:0 auto; }
 
   .menu-columns{ grid-template-columns: 1fr; gap: 20px; }
   .room-types{ grid-template-columns: 1fr; }
