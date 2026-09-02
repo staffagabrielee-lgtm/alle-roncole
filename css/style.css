@@ -87,6 +87,11 @@ p{ margin:0 0 1em; }
   border-color: rgba(255,255,255,.55);
 }
 .btn-outline-light:hover{ background: rgba(255,255,255,.12); border-color:#fff; }
+.btn-outline-dark{
+  color: var(--wine-dark);
+  border-color: rgba(43,33,24,.35);
+}
+.btn-outline-dark:hover{ background: rgba(43,33,24,.06); border-color: var(--wine-dark); }
 .btn-small{ padding: 10px 20px; font-size:.78rem; }
 
 /* ---------- Header ---------- */
@@ -104,10 +109,10 @@ p{ margin:0 0 1em; }
   gap: 20px;
 }
 .brand-logo{ height:58px; width:auto; }
-.main-nav ul{ display:flex; gap: 26px; }
+.main-nav ul{ display:flex; gap: 18px; }
 .main-nav a{
-  font-size:.86rem; letter-spacing:.04em; text-transform:uppercase;
-  color: var(--ink); position:relative; padding: 6px 0;
+  font-size:.78rem; letter-spacing:.03em; text-transform:uppercase;
+  color: var(--ink); position:relative; padding: 6px 0; white-space:nowrap;
 }
 .main-nav a::after{
   content:''; position:absolute; left:0; bottom:0; width:0; height:2px; background: var(--red);
@@ -115,7 +120,7 @@ p{ margin:0 0 1em; }
 }
 .main-nav a:hover::after{ width:100%; }
 
-.header-actions{ display:flex; align-items:center; gap:18px; }
+.header-actions{ display:flex; align-items:center; gap:14px; }
 .phone-link{ display:flex; align-items:center; gap:8px; font-size:.9rem; color: var(--wine); }
 .phone-link svg{ color: var(--red); }
 
@@ -268,6 +273,21 @@ p{ margin:0 0 1em; }
 }
 .menu-note{
   margin-top: 34px; text-align:center; color: var(--ink-soft); font-style: italic; font-family: var(--font-script); font-size: 1.15rem;
+}
+
+/* ---------- Bottega / product list ---------- */
+.product-list{
+  display:flex; flex-wrap:wrap; gap:10px;
+  margin: 20px 0 0;
+}
+.product-list li{
+  list-style:none;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  color: var(--wine-dark);
+  font-size: .88rem;
+  padding: 8px 16px;
+  border-radius: 20px;
 }
 
 /* ---------- Camere ---------- */
